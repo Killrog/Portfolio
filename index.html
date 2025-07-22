@@ -19,18 +19,22 @@
       .bg-blur {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
       background-image: url('background.jpg');
       background-size: cover;
       background-position: center;
       filter: blur(8px);
       z-index: -1;
     }
+       }
+
+    /* Main content wrapper, centered, with padding */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
     /* Make sure container is above the background */
     .container {
