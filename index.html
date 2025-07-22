@@ -13,17 +13,30 @@
 
     /* Full-page layout, clean background, readable font */
     html, body {
-  height: 100%;
-  width: 100%;
-  background-image: url('background.png');
-  background-size: cover;       /* Make it fill the screen */
-  background-position: center;  /* Center the image */
-  background-repeat: no-repeat; /* Don't tile it */
-  background-attachment: fixed; /* Optional: image stays fixed while scrolling */
-  filter: blur(8px);
-  z-index: -1;
-  color: #fff;                  /* Adjust text color if background is dark */
-}
+      <div class="bg-blur"></div>
+
+      <div class="container">
+      .bg-blur {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+      z-index: -1;
+    }
+    
+    /* Make sure container is above the background */
+    .container {
+      position: relative;
+      z-index: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+      height: 100%;
+      color: white;
+    }
+          </div>
+    
+    }
 
     /* Main content wrapper, centered, with padding */
     .container {
