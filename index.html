@@ -13,13 +13,13 @@
 
     /* Full-page layout, clean background, readable font */
     html, body {
-      height: 100%;
-      width: 100%;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #66286f;
-      color: #FF0000;
-      overflow: hidden;
-    }
+  background-image: url('background.png');
+  background-size: cover;       /* Make it fill the screen */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Don't tile it */
+  background-attachment: fixed; /* Optional: image stays fixed while scrolling */
+  color: #fff;                  /* Adjust text color if background is dark */
+}
 
     /* Main content wrapper, centered, with padding */
     .container {
