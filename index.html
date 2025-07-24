@@ -13,12 +13,12 @@
 
     /* Full-page layout, clean background, readable font */
     html, body {
-        content: "";
-        position: fixed;
-        
-        background-image: url('background.jpg'); /* Same image */
-        background-size: cover;
-        background-position: center;
+      background-image: url('background.png');
+      background-size: cover;       /* Make it fill the screen */
+      background-position: center;  /* Center the image */
+      background-repeat: no-repeat; /* Don't tile it */
+      background-attachment: fixed; /* Optional: image stays fixed while scrolling */
+      color: #fff;                  /* Adjust text color if background is dark */
         
      
     }
