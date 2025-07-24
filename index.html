@@ -14,7 +14,7 @@
     /* Full-page layout, clean background, readable font */
     html, body {
       height: 100%;
-      width: 75%;
+      width: 100%;
       background-image: url('background.png');
       background-size: cover;       /* Make it fill the screen */
       background-position: center;  /* Center the image */
@@ -71,6 +71,8 @@
       flex-grow: 1;
       display: flex;
       flex-direction: column;
+      padding: 10px 0; /* optional vertical spacing */
+      margin: 0 40px;  /* horizontal margin to reduce width */
     }
 
     iframe {
